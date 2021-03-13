@@ -1,28 +1,12 @@
-.u-center-text {
-  text-align: center !important;
+.bt-facebook {
+  border-top: 5px solid $color-facebook;
 }
-
-.u-margin-bottom-small {
-  margin-bottom: 1.5rem !important;
+.bt-twitter {
+  border-top: 5px solid $color-twitter;
 }
-.u-margin-bottom-medium {
-  margin-bottom: 4rem !important;
-
-  @include response(desktop) {
-    margin-bottom: 3rem !important;
-  }
+.bt-instagram {
+  border-top: 5px solid $color-instagram;
 }
-.u-margin-bottom-big {
-  margin-bottom: 8rem !important;
-
-  @include response(desktop) {
-    margin-bottom: 5rem !important;
-  }
-}
-
-.u-margin-top-big {
-  margin-top: 8rem !important;
-}
-.u-margin-top-huge {
-  margin-top: 10rem !important;
+.bt-youtube {
+  border-top: 5px solid $color-youtube;
 }
