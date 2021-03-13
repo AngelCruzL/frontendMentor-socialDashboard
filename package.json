@@ -1,0 +1,16 @@
+{
+  "name": "sass-starter",
+  "version": "1.0.0",
+  "description": "Starter project to work with node-sass settings",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run watch:sass\""
+  },
+  "keywords": [],
+  "author": "Ángel Cruz <https://twitter.com/angel_cruzl>",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
