@@ -42,3 +42,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+@mixin headerText {
+  font-size: $default-font-size;
+  font-weight: bold;
+  color: var(--text);
+}

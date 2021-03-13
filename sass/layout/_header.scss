@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      @include headerText;
+    }
+  }
+
+  &__theme-color {
+    display: flex;
+
+    p {
+      @include headerText;
+    }
+  }
+}
