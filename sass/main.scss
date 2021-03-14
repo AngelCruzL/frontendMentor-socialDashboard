@@ -8,8 +8,11 @@
 @import 'base/utilities';
 
 @import 'components/card';
+@import 'components/main-card';
+@import 'components/theme-switcher';
 
 @import 'layout/footer';
 @import 'layout/header';
+@import 'layout/overview';
 
-@import 'pages/home';
+@import 'pages/dashboard';

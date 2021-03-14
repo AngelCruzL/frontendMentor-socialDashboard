@@ -1,0 +1,30 @@
+body {
+  background-color: var(--background);
+  padding: 0 3.5rem;
+
+  @media (min-width: 380px) {
+  }
+
+  @media (min-width: 768px) {
+    padding: 0 15rem;
+  }
+
+  display: grid;
+
+  grid-column: 1fr;
+  grid-gap: 2.5rem;
+
+  grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
+
+  main {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
+    grid-gap: 2.5rem;
+  }
+
+  .overview__container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
+    grid-gap: 2rem;
+  }
+}
