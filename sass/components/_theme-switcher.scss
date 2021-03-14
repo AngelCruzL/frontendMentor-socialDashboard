@@ -1,0 +1,35 @@
+.theme-switcher {
+  appearance: none;
+  background: var(--toggle);
+  width: 6rem;
+  height: 3rem;
+  border-radius: 20px;
+  position: absolute;
+  top: 13rem;
+  right: 5rem;
+
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
+
+  @media (min-width: 380px) {
+    right: 9rem;
+    top: 5.5rem;
+  }
+}
+
+input[type='checkbox']::before {
+  content: '';
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 20px;
+  top: 0.2rem;
+  left: 3.2rem;
+  background: #fff;
+  transition: 0.4s;
+}
+input[type='checkbox']:checked::before {
+  transform: translateX(-29px);
+}

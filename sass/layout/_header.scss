@@ -1,15 +1,30 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: 380px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__title {
     display: flex;
     flex-direction: column;
+    padding: 5rem 0 4rem 0;
+
+    @media (min-width: 380px) {
+      padding: unset;
+    }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.3rem;
       color: var(--text-number);
+
+      @media (min-width: 380px) {
+        font-size: 3rem;
+      }
     }
 
     p {
@@ -19,9 +34,12 @@
 
   &__theme-color {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     p {
       @include headerText;
+      margin-right: 1.5rem;
     }
   }
 }
