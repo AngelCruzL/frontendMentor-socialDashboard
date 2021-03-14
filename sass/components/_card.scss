@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   padding: 2rem;
   border-radius: 5px;
-  max-width: 25vw;
+  flex-direction: column;
 
   &__title {
     @include displayFlex;
